@@ -39,9 +39,11 @@ export default function AccurateDataSection() {
             </li>
           ))}
 
+          <a href="../about" className="w-full sm:w-auto">
           <button className="bg-brand-main rounded py-3 sm:py-4 lg:py-[22px] px-4 sm:px-5 lg:px-6 font-medium text-white-variant w-full sm:w-[180px] lg:w-[201px] h-auto sm:h-12 flex items-center mt-4 sm:mt-5 lg:mt-6 justify-center text-sm sm:text-base hover:bg-opacity-90 transition-all cursor-pointer">
             More About Us
           </button>
+          </a>
         </ul>
       </aside>
     </section>
