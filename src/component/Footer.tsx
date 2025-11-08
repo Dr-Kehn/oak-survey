@@ -1,6 +1,46 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "sonner";
 
 function Footer() {
+  // state to monitor inputs
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+
+  // state to monitor Textarea
+  const [message, setMessage] = useState("");
+
+  const handleForm = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { type, name, value, checked } = e.target;
+
+    setForm((prevState) => {
+      return {
+        ...prevState,
+        [name]: type === "checkbox" ? checked : value,
+      };
+    });
+  };
+
+  const handleSubmit = () => {
+    // Validation
+    if (!form.name || !form.email || !message) {
+      toast.error("Please fill in all required fields");
+      return;
+    }
+
+    // send email
+    const email = "info@oaksurveys.ie";
+    const subject = encodeURIComponent(
+      `Contact from ${form.name} - ${form.phone}`
+    );
+    const body = encodeURIComponent(message);
+
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+  };
+
   return (
     <footer className=" min-h-[730px] mx-auto bg-brand-950 flex items-center">
       <section className="mx-auto lg:w-[80%] w-[80%] md:w-full md:px-10 lg:px-0 flex md:flex-row flex-col justify-between font-medium py-14 md:py-0">
@@ -18,33 +58,41 @@ function Footer() {
             <input
               className="border border-brand-950 text-form-gray p-4 rounded-lg mt-4 focus:outline focus:outline-brand-main placeholder:text-form-gray/50 bg-bg-form-gray"
               type="text"
-              name=""
-              id=""
+              name="name"
+              value={form.name}
+              onChange={handleForm}
               placeholder="Full Name"
             />
 
             <input
               className="border border-brand-950 text-form-gray p-4 rounded-lg mt-4 focus:outline focus:outline-brand-main placeholder:text-form-gray/50 bg-bg-form-gray"
               type="email"
-              name=""
-              id=""
+              name="email"
+              value={form.email}
+              onChange={handleForm}
               placeholder="Email"
             />
 
             <input
               className="border border-brand-950 text-form-gray p-4 rounded-lg mt-4 focus:outline focus:outline-brand-main placeholder:text-form-gray/50 bg-bg-form-gray"
-              type="number"
-              name=""
-              id=""
+              type="text"
+              name="phone"
+              value={form.phone}
+              onChange={handleForm}
               placeholder="Phone number"
             />
 
             <textarea
               className="border border-brand-950 text-form-gray p-4 rounded-lg mt-4 focus:outline focus:outline-brand-main placeholder:text-form-gray/50 bg-bg-form-gray resize-y h-[113px]"
               placeholder="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
 
-            <button className="rounded-lg bg-brand-main w-[151px] h-12 text-white font-medium absolute md:right-0 left-0 -bottom-20 cursor-pointer">
+            <button
+              onClick={handleSubmit}
+              className="rounded-lg bg-brand-main w-[151px] h-12 text-white font-medium absolute md:right-0 left-0 -bottom-20 cursor-pointer"
+            >
               Send
             </button>
           </div>
