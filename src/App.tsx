@@ -4,6 +4,7 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
+import { Toaster } from "sonner";
 
 import Layout from "./component/Layout";
 import Home from "./page/Home";
@@ -56,7 +57,31 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Toaster
+        position="top-center"
+        expand={true}
+        richColors
+        closeButton
+        theme="light"
+        duration={10000}
+        visibleToasts={1}
+        toastOptions={{
+          classNames: {
+            toast: "shadow-lg",
+            title: "font-semibold",
+            description: "text-sm",
+            success: "border-l-4 border-green-500",
+            error: "border-l-4 border-red-500",
+            warning: "border-l-4 border-yellow-500",
+            info: "border-l-4 border-blue-500",
+          },
+        }}
+      />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
