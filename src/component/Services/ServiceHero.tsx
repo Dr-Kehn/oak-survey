@@ -6,7 +6,7 @@ interface ServiceHeroProps {
 
 const ServiceHero = ({
   title,
-  backgroundImage = "/Servicebg.jpg",
+  backgroundImage = "/mainServicesHeroImg.png",
   placeDiv = false,
 }: ServiceHeroProps) => {
   return (

@@ -51,7 +51,7 @@ function WhyOak() {
         <div className="mt-10 hidden lg:block sm:mt-16 lg:mt-20 w-full sm:w-[95%] lg:w-[90%] mx-auto">
           {/* Images on big screen */}
           <img
-            src="/double image.svg"
+            src="/foundationBigScreen.svg"
             alt="Architects planning"
             className="w-full h-auto rounded-lg"
           />
@@ -60,7 +60,7 @@ function WhyOak() {
         <div className="mt-10 block lg:hidden sm:mt-16 lg:mt-20 w-full sm:w-[95%] lg:w-[90%] mx-auto">
           {/* Images on small screen*/}
           <img
-            src="/straight double image.svg"
+            src="/foundationMainSmallScreen.svg"
             alt="Architects planning"
             className="w-full h-auto rounded-lg"
           />
