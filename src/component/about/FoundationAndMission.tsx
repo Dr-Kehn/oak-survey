@@ -18,7 +18,7 @@ function FoundationAndMission() {
       desc: "We Ensure Absolute Accuracy In Every Reading, Providing Reliable Data For Smarter Decisions.",
     },
     {
-      img: "/surveying.svg",
+      img: "/foundation1.svg",
       title: "UTILIZING STATE-OF-THE-ART SURVEYING TECHNOLOGY ON SITE",
       desc: "Using Advanced GPS, 3D Scanning, And Drone Tools, We Capture Precise On-site Data With Speed And Efficiency.",
     },

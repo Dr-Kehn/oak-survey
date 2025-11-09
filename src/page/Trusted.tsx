@@ -24,6 +24,10 @@ function Trusted() {
       icon: "/castlethorn.svg",
       name: "Castlethorn",
     },
+    {
+      icon: "/Geomax.svg",
+      name: "Geomax",
+    },
   ];
 
   return (

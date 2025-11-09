@@ -42,7 +42,8 @@ function SettingOutComp() {
       <OurServicesIntro title="Precision Setting Out Services in Ireland" />
       <ServiceParagraph text="At Oak surveys, we understand that every successful construction project begins with precision. Setting out is the process of transferring a building or infrastructure design from technical drawings onto the actual ground — marking out exact positions, levels, and dimensions where structures will be built." />
       <ServiceParagraph text="Accurate setting out ensures that your foundation, walls, columns, and other structural elements are built in the right place, at the right level, and according to plan. Any inaccuracy at this stage can lead to costly delays, errors, and structural problems later on — which is why precision is at the heart of what we do." />
-      <ServicesImg img={["/site Survey 1.svg", "/site survey 2.svg"]} />
+
+      <ServicesImg img={["/settingOutServices.svg", "/site survey 2.svg"]} />
       <ServicesTitle text="Our Expertise" />
       <ServiceParagraph text="Oak surveys provides professional setting out services across Ireland for a wide range of construction and engineering projects. From small residential developments to large-scale industrial, commercial, and public infrastructure works, our team ensures that every design is translated flawlessly onto the ground." />
       <ServiceParagraph text="We also offer specialized setting out services for complex projects such as: " />

@@ -6,7 +6,7 @@ function CommercialDevelopmentSurveySection() {
       desc: "Boundary and building surveys for a housing development in Kildare, ensuring smooth construction alignment.",
     },
     {
-      img: "/infrastructureUpgradeWorks.svg",
+      img: "/commercial2.svg",
       title: "Infrastructure Upgrade Works",
       desc: "Engineering surveys and setting-out for a major transport improvement project, providing precise data for all construction phases.",
     },
@@ -27,7 +27,7 @@ function CommercialDevelopmentSurveySection() {
         {/* Main Image */}
         <aside className="w-full lg:w-1/2 xl:w-[55%]">
           <img
-            src="/architectsAtWork.svg"
+            src="/commercial1.svg"
             alt="Architects at work on construction site"
             className="w-full h-auto rounded-lg object-cover"
           />
