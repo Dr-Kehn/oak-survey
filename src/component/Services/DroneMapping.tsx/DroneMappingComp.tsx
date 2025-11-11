@@ -12,7 +12,7 @@ function DroneMappingComp() {
       <ServiceParagraph text="By combining aerial precision with advanced photogrammetry and GPS positioning, we capture real-time site conditions safely and efficiently — reducing time spent on the ground while maintaining the highest standards of accuracy." />
 
       <ServicesImg
-        img={["/gray colored drone.svg", "/white colored drone.svg"]}
+        img={["/drone map.svg", "/white colored drone.svg"]}
       />
 
       <ServicesTitle text="Our Approach to Drone Mapping" />
