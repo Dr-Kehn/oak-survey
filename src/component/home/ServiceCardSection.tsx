@@ -91,7 +91,13 @@ export default function ServiceCardsSection() {
                 <p className="font-medium text-[0.95rem] sm:text-[1rem] leading-relaxed">
                   {card.description}
                 </p>
-                <button className="rounded border border-yellow-border text-yellow-border py-3 px-4 sm:py-[22px] sm:px-6 hover:text-light-gray hover:bg-brand-main hover:border-brand-main flex items-center justify-between h-12 transition-all duration-300 text-sm sm:text-base cursor-pointer">
+                <button
+                  onClick={() => {
+                    navigate(card.href);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="rounded border border-yellow-border text-yellow-border py-3 px-4 sm:py-[22px] sm:px-6 hover:text-light-gray hover:bg-brand-main hover:border-brand-main flex items-center justify-between h-12 transition-all duration-300 text-sm sm:text-base cursor-pointer"
+                >
                   More About Us <FaPlay className="ml-2" />
                 </button>
               </aside>
