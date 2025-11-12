@@ -6,26 +6,24 @@ export default function ServiceCardsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/about");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   const cards = [
     {
       title: "Measured Building Survey",
       description:
         "Our precise building surveys capture every structural detail for architects and engineers to design with confidence.",
+      href: "/services/building-survey",
     },
     {
       title: "Topographical Survey",
       description:
         "We deliver detailed site plans showing ground levels, boundaries, and features to help you plan and design efficiently.",
+      href: "/services/topographical-surveying",
     },
     {
       title: "Boundary Mapping",
       description:
         "We provide reliable property boundary and title mapping for both legal and planning purposes.",
+      href: "/services/boundary-disputes",
     },
   ];
 
@@ -61,7 +59,10 @@ export default function ServiceCardsSection() {
               {card.description}
             </p>
             <button
-              onClick={handleClick}
+              onClick={() => {
+                navigate(card.href);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="rounded border border-yellow-border text-yellow-border py-3 px-4 xl:py-[22px] xl:px-6 hover:text-light-gray hover:bg-brand-main hover:border-brand-main flex items-center justify-between h-12 transition-all duration-300 text-sm xl:text-base cursor-pointer"
             >
               More About Us <FaPlay className="ml-2" />
