@@ -10,6 +10,10 @@ function Footer() {
     phone: "",
   });
 
+  // scroll to top
+  const handleScrollOnClick = () =>
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
   // state to monitor Textarea
   const [message, setMessage] = useState("");
 
@@ -107,31 +111,35 @@ function Footer() {
                 <li>
                   <Link
                     to="about"
-                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray"
+                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray hover:underline cursor-pointer"
+                    onClick={handleScrollOnClick}
                   >
                     About Us
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray"
+                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray hover:underline cursor-pointer"
                     to="trustedPartners"
+                    onClick={handleScrollOnClick}
                   >
                     Trusted Clients
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray"
+                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray hover:underline cursor-pointer"
                     to="services"
+                    onClick={handleScrollOnClick}
                   >
                     Our Services
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray"
+                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray hover:underline cursor-pointer"
                     to="contact"
+                    onClick={handleScrollOnClick}
                   >
                     Contact Us
                   </Link>
