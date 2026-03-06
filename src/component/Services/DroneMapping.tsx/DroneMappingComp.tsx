@@ -6,14 +6,12 @@ import ServicesTitle from "../ServicesTitle";
 
 function DroneMappingComp() {
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Drone Mapping in Ireland" />
       <ServiceParagraph text="At OAK SURVEYS, we harness the power of drone technology to deliver fast, accurate, and detailed aerial data for projects of all sizes. Our drone mapping services provide high-resolution imagery, 3D terrain models, and topographic maps that help engineers, developers, and construction professionals make informed decisions with confidence." />
       <ServiceParagraph text="By combining aerial precision with advanced photogrammetry and GPS positioning, we capture real-time site conditions safely and efficiently — reducing time spent on the ground while maintaining the highest standards of accuracy." />
 
-      <ServicesImg
-        img={["/drone map.svg", "/white colored drone.svg"]}
-      />
+      <ServicesImg img={["/drone map.svg", "/white colored drone.svg"]} />
 
       <ServicesTitle text="Our Approach to Drone Mapping" />
       <ServiceParagraph text="We begin with a thorough site assessment to determine the most effective flight paths, camera settings, and ground control points. Using state-of-the-art drones, we capture overlapping aerial images that are processed into accurate maps, elevation models, and contour data." />

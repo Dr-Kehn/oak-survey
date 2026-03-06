@@ -7,7 +7,7 @@ import ServicesTitle from "../ServicesTitle";
 
 function SiteSurveyComps() {
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Site Survey in Ireland" />
       <ServiceParagraph text="At Oak Surveys, we believe that every successful design and construction project begins with a precise understanding of the site. A site survey provides accurate data about land features, boundaries, levels, and existing infrastructure — forming the foundation for safe, efficient, and compliant project planning." />
       <ServiceParagraph text="Whether it's for a new development, renovation, or infrastructure project, our site surveys deliver reliable measurements that help clients make informed decisions and avoid costly errors during construction." />

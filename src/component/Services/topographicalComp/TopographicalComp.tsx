@@ -40,7 +40,7 @@ function TopographicalComp() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Comprehensive Mapping for Every Stage of Development " />
       <ServiceParagraph text="At Oak surveys, we provide precise and detail-oriented topographical surveys, offering a complete picture of both natural and built environments. our team delivers highly accurate, contoured site drawings that serve as the foundation for successful design, planning, and construction projects." />
       <ServiceParagraph text="From vast open landscapes to complex architectural sites, our surveys help clients visualize every element of their land  ensuring that design and engineering decisions are made on reliable data." />

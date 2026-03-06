@@ -58,7 +58,7 @@ function Header() {
 
   return (
     <div className="bg-header-bg">
-      <header className="z-50 mx-auto w-[90%] sm:w-[85%] md:w-full md:px-10 lg:w-[80%] lg:px-0 flex items-center justify-between font-medium h-[93px] relative">
+      <header className="z-50 mx-auto w-[90%] sm:w-[85%] md:w-full md:px-10 lg:w-[90%] lg:px-0 flex items-center justify-between font-medium h-[93px] relative">
         <Link to="." onClick={closeMenu}>
           <img
             src="/oak_logo.svg"
@@ -89,7 +89,7 @@ function Header() {
                     ? "font-medium border-b-2 pb-3.5 border-b-brand-main text-brand-main"
                     : "font-medium hover:text-brand-main transition-colors"
                 }
-                to="About"
+                to="about"
               >
                 About us
               </NavLink>
@@ -144,22 +144,40 @@ function Header() {
                     ? "font-medium border-b-2 pb-3.5 border-b-brand-main text-brand-main"
                     : "font-medium hover:text-brand-main transition-colors"
                 }
-                to="Contact"
+                to="gallery"
               >
-                Contact us
+                Gallery
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-medium border-b-2 pb-3.5 border-b-brand-main text-brand-main"
+                    : "font-medium hover:text-brand-main transition-colors"
+                }
+                to="contact"
+              >
+                Contact Us
               </NavLink>
             </li>
           </ul>
         </nav>
 
-        <button className="p-3 md:p-4 hidden  rounded-lg bg-brand-main text-white lg:flex h-12 md:h-[53px] justify-center items-center gap-2 md:gap-4 font-medium text-[12px] md:text-[13px] lg:text-[14px] hover:bg-opacity-90 transition-all whitespace-nowrap">
+        <a
+          href="tel:+3530874950977"
+          aria-label="Call us at +353 087 495 0977"
+          rel="noopener noreferrer"
+          className="p-3 md:p-4 hidden rounded-lg bg-brand-main text-white lg:flex h-12 md:h-[53px] justify-center items-center gap-2 md:gap-4 font-medium text-[12px] md:text-[13px] lg:text-[13px] hover:bg-opacity-90 transition-all whitespace-nowrap"
+        >
           <img
             src="/call.svg"
             alt="call icon"
             className="w-4 h-4 lg:w-5 lg:h-5"
           />
           +353 (0)874950977
-        </button>
+        </a>
 
         {/* Mobile menu toggle */}
         <button

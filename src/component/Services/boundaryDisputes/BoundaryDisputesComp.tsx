@@ -36,7 +36,7 @@ function BoundaryDisputesComp() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Professional Land Surveying and Mediation by Oak surveys" />
       <ServiceParagraph text="Boundary disputes can arise when two or more property owners disagree on where one parcel of land ends and another begins. These disagreements may involve ownership limits, wall placements, access routes, or maintenance responsibilities." />
       <ServiceParagraph text="At Oak surveys, we specialize in resolving such disputes through accurate surveying, professional documentation, and clear communication between all involved parties. Our goal is not only to determine the rightful boundary but also to preserve future neighborly relationships by finding fair and lasting solutions." />

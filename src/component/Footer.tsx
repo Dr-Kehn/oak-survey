@@ -38,7 +38,7 @@ function Footer() {
     // send email
     const email = "info@oaksurveys.ie";
     const subject = encodeURIComponent(
-      `Contact from ${form.name} - ${form.phone}`
+      `Contact from ${form.name} - ${form.phone}`,
     );
     const body = encodeURIComponent(message);
 
@@ -47,7 +47,7 @@ function Footer() {
 
   return (
     <footer className=" min-h-[730px] mx-auto bg-brand-950 flex items-center">
-      <section className="mx-auto lg:w-[80%] w-[80%] md:w-full md:px-10 lg:px-0 flex md:flex-row flex-col justify-between font-medium py-14 md:py-0">
+      <section className="mx-auto lg:w-[90%] w-[80%] md:w-full md:px-10 lg:px-0 flex md:flex-row flex-col justify-between font-medium py-14 md:py-0">
         <aside className="lg:w-[400px] md:w-[350px] w-full">
           {/* Form */}
           <h1 className="flex items-center gap-2 font-bold text-[1.51rem] mb-2.5 text-white-25">
@@ -153,13 +153,38 @@ function Footer() {
             <h1 className="font-bold text-[1.11125rem] mb-2.5 text-white-25 mt-12 ">
               CONTACT
               <ul className="flex flex-col gap-4 mt-8 text-white-gray">
-                <li className="flex items-center gap-4 md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px ">
-                  <img src="/second-call-icon.svg" alt="call icon" /> +353
-                  (0)874950977
+                <li>
+                  <a
+                    className="flex items-center gap-4 md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px "
+                    href="tel:+3530874950977"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/second-call-icon.svg" alt="call icon" /> +353
+                    (0)874950977
+                  </a>
                 </li>
 
-                <li className="flex items-center gap-4 md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px ">
-                  <img src="/mail.svg" alt="mail icon" /> info@oaksurveys.ie
+                <li>
+                  <a
+                    className="flex items-center gap-4 md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px"
+                    href="mailto:info@oaksurveys.ie"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img src="/mail.svg" alt="mail icon" /> info@oaksurveys.ie
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    className="flex items-center gap-4 md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px"
+                    href="https://maps.google.com/?q=Pollerton+Road,+Carlow+Town,+Carlow,+Ireland"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img src="/mail.svg" alt="mail icon" /> Pollerton Road,
+                    Carlow Town, Carlow , Ireland
+                  </a>
                 </li>
               </ul>
             </h1>

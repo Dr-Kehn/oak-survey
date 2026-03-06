@@ -6,7 +6,7 @@ import ServicesTitle from "../ServicesTitle";
 
 function IrishWaterComp() {
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Irish Water Compliance Documentation" />
       <ServiceParagraph text="At OAK SURVEYS, we assist developers, engineers, and contractors in preparing and submitting all required documentation for Irish Water compliance. Our team ensures that your project meets national water and wastewater standards from design through to final approval." />
       <ServiceParagraph text="We provide accurate, regulation-ready drawings and reports that align with Irish Water’s Code of Practice and Standard Details — helping you avoid costly delays and resubmissions." />

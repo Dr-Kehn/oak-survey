@@ -7,7 +7,7 @@ import ServicesTitle from "../ServicesTitle";
 
 function AsBuiltSurveyComps() {
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="As-Built Surveys" />
       <ServiceParagraph text="At OAK SURVEYS, we provide precise as-built surveys that capture the true, on-ground conditions of completed or ongoing projects. These surveys are essential for verifying construction accuracy, ensuring compliance with design specifications, and supporting handover documentation." />
       <ServiceParagraph text="Using advanced surveying instruments and drone mapping technology, our team records detailed measurements of buildings, utilities, roads, and infrastructure. The resulting data is processed into accurate as-built drawings and 3D models, clearly showing any deviations from original plans." />

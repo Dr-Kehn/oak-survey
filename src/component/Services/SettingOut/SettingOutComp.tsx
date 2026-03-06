@@ -38,7 +38,7 @@ function SettingOutComp() {
   };
 
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Precision Setting Out Services in Ireland" />
       <ServiceParagraph text="At Oak surveys, we understand that every successful construction project begins with precision. Setting out is the process of transferring a building or infrastructure design from technical drawings onto the actual ground — marking out exact positions, levels, and dimensions where structures will be built." />
       <ServiceParagraph text="Accurate setting out ensures that your foundation, walls, columns, and other structural elements are built in the right place, at the right level, and according to plan. Any inaccuracy at this stage can lead to costly delays, errors, and structural problems later on — which is why precision is at the heart of what we do." />

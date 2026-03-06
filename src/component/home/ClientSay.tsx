@@ -23,19 +23,19 @@ export default function ClientSay() {
 
   const handlePrev = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
+      prev === 0 ? testimonials.length - 1 : prev - 1,
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prev) =>
-      prev === testimonials.length - 1 ? 0 : prev + 1
+      prev === testimonials.length - 1 ? 0 : prev + 1,
     );
   };
 
   return (
     <section className="mt-10 w-full min-h-[593px] bg-white-25 flex items-center justify-center py-10 sm:py-16 lg:py-20">
-      <div className="w-[90%] sm:w-[85%] lg:w-[80%] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-8">
+      <div className="w-[90%] sm:w-[85%] lg:w-[90%] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-8">
         {/* Left Section - Text */}
         <aside className="text-gray-text w-full lg:basis-[45%] text-center lg:text-left">
           <h1 className="font-bold text-[1.5rem] sm:text-[1.75rem] lg:text-[2.25rem] leading-tight sm:leading-9 uppercase">
@@ -45,9 +45,9 @@ export default function ClientSay() {
             Trusted feedback from our valued clients
           </p>
           <a href="../about" className="w-full sm:w-auto">
-          <button className="bg-brand-main rounded py-3 sm:py-4 lg:py-[22px] px-4 sm:px-5 lg:px-6 font-medium text-white-variant w-full sm:w-[180px] lg:w-[201px] h-auto sm:h-12 flex items-center mt-6 sm:mt-5 lg:mt-6 justify-center text-sm sm:text-base hover:bg-opacity-90 transition-all mx-auto lg:mx-0 cursor-pointer">
-            More About Us
-          </button>
+            <button className="bg-brand-main rounded py-3 sm:py-4 lg:py-[22px] px-4 sm:px-5 lg:px-6 font-medium text-white-variant w-full sm:w-[180px] lg:w-[201px] h-auto sm:h-12 flex items-center mt-6 sm:mt-5 lg:mt-6 justify-center text-sm sm:text-base hover:bg-opacity-90 transition-all mx-auto lg:mx-0 cursor-pointer">
+              More About Us
+            </button>
           </a>
         </aside>
 

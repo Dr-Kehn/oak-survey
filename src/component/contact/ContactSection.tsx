@@ -29,7 +29,7 @@ function ContactSection() {
 
   // Handle input changes
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -51,17 +51,17 @@ function ContactSection() {
     // Construct email
     const email = "info@oaksurveys.ie";
     const subject = encodeURIComponent(
-      `Survey Inquiry from ${formData.firstName} ${formData.lastName}`
+      `Survey Inquiry from ${formData.firstName} ${formData.lastName}`,
     );
     const body = encodeURIComponent(
-      `Phone: ${formData.phone}\nSurvey Type: ${formData.surveyType}\n\nMessage:\n${formData.message}`
+      `Phone: ${formData.phone}\nSurvey Type: ${formData.surveyType}\n\nMessage:\n${formData.message}`,
     );
 
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
   };
 
   return (
-    <section className="py-10 sm:py-16 lg:py-20 w-[90%] sm:w-[85%] lg:w-[80%] mx-auto px-4 sm:px-0">
+    <section className="py-10 sm:py-16 lg:py-20 w-[90%] sm:w-[85%] lg:w-[90%] mx-auto px-4 sm:px-0">
       {/* Contact icons - Always side by side, left aligned */}
       <div className="flex flex-row gap-6 sm:gap-10 lg:gap-20 justify-start">
         {contactInfo.map((info, index) => (
@@ -92,7 +92,7 @@ function ContactSection() {
         onSubmit={handleSubmit}
         className="mt-16 sm:mt-24 lg:mt-40 flex flex-col gap-6 sm:gap-7 lg:gap-8"
       >
-        <div className="flex mx-auto w-full md:flex-row flex-col md:w-[85%] lg:w-[80%] gap-6 sm:gap-8 lg:gap-[39.32px]">
+        <div className="flex mx-auto w-full md:flex-row flex-col md:w-[85%] lg:w-[90%] gap-6 sm:gap-8 lg:gap-[39.32px]">
           <input
             className="basis-[50%] p-4 sm:p-5 lg:p-[19.66px] rounded-lg lg:rounded-[9.83px] bg-light-gray focus:outline-none focus:ring-2 focus:ring-brand-main shadow-lg placeholder:text-gray-400 text-sm sm:text-base"
             type="text"
@@ -115,7 +115,7 @@ function ContactSection() {
           />
         </div>
 
-        <div className="flex mx-auto w-full md:flex-row flex-col md:w-[85%] lg:w-[80%] gap-6 sm:gap-8 lg:gap-[39.32px]">
+        <div className="flex mx-auto w-full md:flex-row flex-col md:w-[85%] lg:w-[90%] gap-6 sm:gap-8 lg:gap-[39.32px]">
           <input
             className="basis-[50%] p-4 sm:p-5 lg:p-[19.66px] rounded-lg lg:rounded-[9.83px] bg-light-gray focus:outline-none focus:ring-2 focus:ring-brand-main shadow-lg placeholder:text-gray-400 text-sm sm:text-base"
             type="email"
@@ -138,7 +138,7 @@ function ContactSection() {
           />
         </div>
 
-        <div className="md:w-[85%] lg:w-[80%] w-full mx-auto">
+        <div className="md:w-[85%] lg:w-[90%] w-full mx-auto">
           <input
             className="w-full p-4 sm:p-5 lg:p-[19.66px] rounded-lg lg:rounded-[9.83px] bg-light-gray focus:outline-none focus:ring-2 focus:ring-brand-main shadow-lg placeholder:text-gray-400 text-sm sm:text-base"
             type="text"
@@ -151,7 +151,7 @@ function ContactSection() {
           />
         </div>
 
-        <div className="w-full md:w-[85%] lg:w-[80%] mx-auto">
+        <div className="w-full md:w-[85%] lg:w-[90%] mx-auto">
           <textarea
             className="min-h-[150px] sm:min-h-[175px] lg:min-h-[175.72px] resize-y w-full p-4 sm:p-5 lg:p-[19.66px] focus:outline-none focus:ring-2 focus:ring-brand-main bg-light-gray rounded-lg lg:rounded-[9.83px] shadow-lg placeholder:text-gray-400 text-sm sm:text-base"
             placeholder="Message"
@@ -163,7 +163,7 @@ function ContactSection() {
           />
         </div>
 
-        <div className="w-full md:w-[85%] lg:w-[80%] mx-auto">
+        <div className="w-full md:w-[85%] lg:w-[90%] mx-auto">
           <button
             type="submit"
             className="bg-brand-main rounded-lg py-3 sm:py-4 px-6 sm:px-8 font-medium text-white w-full sm:w-auto hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-brand-main focus:ring-offset-2"

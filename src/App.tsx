@@ -26,6 +26,7 @@ import AsBuiltSurveys from "./page/ServicePages/AsBuiltSurveys";
 import SiteSurveys from "./page/ServicePages/SiteSurveys";
 import Trusted from "./page/Trusted";
 import Contact from "./page/Contact";
+import Gallery from "./page/Gallery";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +36,7 @@ const router = createBrowserRouter(
       <Route path="services" element={<Services />} />
       <Route path="contact" element={<Contact />} />
       <Route path="trustedPartners" element={<Trusted />} />
+      <Route path="gallery" element={<Gallery />} />
 
       {/* Individual Service Pages */}
       <Route path="services/land-registry" element={<LandRegistry />} />
@@ -52,8 +54,8 @@ const router = createBrowserRouter(
       <Route path="services/irish-water" element={<IrishWater />} />
       <Route path="services/as-built-surveys" element={<AsBuiltSurveys />} />
       <Route path="services/site-surveys" element={<SiteSurveys />} />
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 function App() {

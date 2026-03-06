@@ -23,7 +23,7 @@ const ServiceHero = ({
       </div>
 
       {placeDiv && (
-        <div className=" absolute lg:w-[80%] w-[90%] lg:left-[10%] left-[5%] -bottom-px py-4 md:py-6 bg-white "></div>
+        <div className=" absolute lg:w-[90%] w-[90%] lg:left-[5%] left-[5%] -bottom-px py-4 md:py-6 bg-white "></div>
       )}
     </div>
   );

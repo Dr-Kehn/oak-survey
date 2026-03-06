@@ -42,7 +42,7 @@ function VolumeSurveyingComp() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Precision Measurement and Earthwork Analysis by Oak surveys " />
       <ServiceParagraph text="At Oak surveys, we deliver precise and dependable volume surveying services for projects of every scale. From construction sites and stockpiles to large quarries and infrastructure developments, our experts use advanced surveying technology to measure, calculate, and report earthwork quantities with complete accuracy." />
       <ServiceParagraph text="Our volumetric surveys provide essential data for project planning, cost estimation, and resource management. Using advanced laser scanning and drone-based photogrammetry, we generate 3D models that show every contour and variation on site — helping clients visualize, plan, and make informed decisions based on verified ground data." />

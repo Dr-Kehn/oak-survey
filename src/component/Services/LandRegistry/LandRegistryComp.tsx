@@ -5,7 +5,7 @@ import ServicesTitle from "../ServicesTitle";
 
 function LandRegistryComp() {
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Secure Your Property with Precision and Compliance" />
       <ServiceParagraph text="Owning land or property in Ireland involves more than holding a deed — it requires official registration with the Property Registration Authority (PRA). A Land Registry–Compliant Map is an essential part of this process, offering a precise, legally recognized depiction of your property boundaries." />
       <ServiceParagraph text="At OAK SURVEYS, we produce accurate, PRA-compliant maps that fully meet technical and legal standards. Whether you’re registering new land, resolving boundary discrepancies, or subdividing property, our experts ensure every map is clear, precise, and ready for seamless approval." />

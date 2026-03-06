@@ -36,7 +36,7 @@ export default function ServiceCardsSection() {
   };
 
   return (
-    <section className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0">
+    <section className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0">
       <h1 className="font-bold text-[1.225rem] sm:text-[1.75rem] lg:text-[2.25rem] leading-tight sm:leading-9 uppercase">
         SERVICE CARDS SECTION
       </h1>

@@ -25,7 +25,7 @@ function FoundationAndMission() {
   ];
 
   return (
-    <section className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0">
+    <section className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0">
       <div className="flex flex-col lg:flex-row justify-between gap-8 sm:gap-10 lg:gap-12">
         {/* Left Section - Mission Text */}
         <aside className="flex flex-col gap-5 sm:gap-6 lg:gap-8 w-full lg:w-[55%]">

@@ -7,7 +7,7 @@ import ServicesTitle from "../ServicesTitle";
 
 function ForestryComp() {
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Forest Road Planning in Ireland" />
       <ServiceParagraph text="At Oak Surveys, we understand that well-planned forest roads are the foundation for efficient forest management, timber production, and environmental conservation. Forest roads provide essential access for activities such as timber harvesting, transportation, fire control, and eco-tourism. When designed and constructed properly, they not only improve accessibility but also help prevent erosion and environmental degradation." />
       <ServiceParagraph text="Our forest road planning services combine technical expertise with sustainable engineering practices to ensure that every project is safe, durable, and compliant with environmental and forestry regulations in Ireland. We focus on cost-effective solutions that maintain the balance between accessibility, safety, and ecological preservation." />

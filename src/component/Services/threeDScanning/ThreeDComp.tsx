@@ -37,7 +37,7 @@ function ThreeDComp() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="What Is 3D Scanning? " />
       <ServiceParagraph text="At Oak surveys, we harness advanced 3D laser scanning technology to deliver precise, data-rich models of real-world environments. Our 3D scanning service transforms physical spaces, from complex industrial facilities to heritage buildings  into highly detailed digital replicas that form the foundation for accurate design, planning, and analysis." />
       <ServiceParagraph text="This process uses millions of laser points to capture exact spatial information. The data is processed into what’s known as a point cloud, which can then be converted into 2D drawings, BIM models, or high-resolution 3D visualizations." />

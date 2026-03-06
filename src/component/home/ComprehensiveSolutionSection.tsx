@@ -18,7 +18,7 @@ export default function ComprehensiveSolutionsSection() {
   ];
 
   return (
-    <section className="w-[90%] sm:w-[85%] lg:w-[80%] mx-auto flex flex-col lg:flex-row justify-between text-gray-text py-10 sm:py-16 lg:py-20 gap-6 lg:gap-8 items-center px-4 sm:px-0">
+    <section className="w-[90%] sm:w-[85%] lg:w-[90%] mx-auto flex flex-col lg:flex-row justify-between text-gray-text py-10 sm:py-16 lg:py-20 gap-6 lg:gap-8 items-center px-4 sm:px-0">
       <aside className="w-full lg:basis-[50%]">
         <h1 className="font-bold text-[1.225rem] sm:text-[1.75rem] lg:text-[2.25rem] leading-tight sm:leading-9 uppercase">
           COMPREHENSIVE SURVEYING SOLUTIONS

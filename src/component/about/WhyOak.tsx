@@ -19,7 +19,7 @@ function WhyOak() {
 
   return (
     <section className="min-h-[600px] sm:min-h-[800px] lg:min-h-[1195px] bg-light-gray flex flex-col justify-center items-center">
-      <div className="w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0">
+      <div className="w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0">
         <h1 className="font-black text-[1.225rem] sm:text-[1.75rem] lg:text-[2.25rem] leading-tight sm:leading-8 lg:leading-9 text-left">
           WHY CHOOSE <span className="text-brand-main">OAK SURVEYS?</span>
         </h1>

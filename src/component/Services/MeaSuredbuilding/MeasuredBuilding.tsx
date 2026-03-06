@@ -41,7 +41,7 @@ function MeasuredBuildingComp() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
+    <div className="text-gray-text w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 px-4 sm:px-0 mb-20">
       <OurServicesIntro title="Measured Building Surveys " />
       <ServiceParagraph text="At Oak surveys & Engineering Services, we specialize in delivering highly accurate Measured Building Surveys for residential, commercial, and industrial properties across Ireland." />
       <ServiceParagraph text="Whether you need detailed floor plans, elevation drawings, or full 3D models, our experienced engineers and surveyors use advanced tools to capture every dimension and structural detail with precision." />

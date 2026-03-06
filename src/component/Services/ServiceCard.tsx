@@ -119,12 +119,12 @@ const ServiceCard = () => {
 
   // Filter services - case insensitive partial match
   const filteredService = services.filter((service) =>
-    service.title.toLowerCase().includes(searchValue.toLowerCase().trim())
+    service.title.toLowerCase().includes(searchValue.toLowerCase().trim()),
   );
 
   return (
     <>
-      <div className="w-[90%] sm:w-[85%] lg:w-[80%] py-6 sm:py-8 mx-auto flex justify-end px-4 sm:px-0">
+      <div className="w-[90%] sm:w-[85%] lg:w-[90%] py-6 sm:py-8 mx-auto flex justify-end px-4 sm:px-0">
         <div className="bg-anotherGray w-full sm:w-[280px] lg:w-[300px] flex gap-3 sm:gap-4 rounded-lg p-3 sm:p-4 items-center">
           {/* Search icon */}
           <img
@@ -156,7 +156,7 @@ const ServiceCard = () => {
 
       <section className="w-full py-6 sm:py-8 flex justify-center items-center mb-10 sm:mb-14">
         {/* Cards */}
-        <div className="max-w-[1440px] w-[90%] sm:w-[85%] lg:w-[80%] px-4 sm:px-0">
+        <div className="max-w-[1440px] w-[90%] sm:w-[85%] lg:w-[90%] px-4 sm:px-0">
           {filteredService.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
               {filteredService.map((service) => (
@@ -172,7 +172,7 @@ const ServiceCard = () => {
                   <h3 className="text-base sm:text-lg lg:text-[2rem] font-bold mb-4 sm:mb-5 lg:mb-7 leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-[0.75rem] sm:text-sm lg:text-[1.125rem] text-gray-text font-medium mb-5 sm:mb-7 lg:mb-10 w-[90%] sm:w-[85%] lg:w-[80%] leading-relaxed">
+                  <p className="text-[0.75rem] sm:text-sm lg:text-[1.125rem] text-gray-text font-medium mb-5 sm:mb-7 lg:mb-10 w-[90%] sm:w-[85%] lg:w-[90%] leading-relaxed">
                     {service.description}
                   </p>
                   <Link

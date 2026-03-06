@@ -13,11 +13,11 @@ function CommercialDevelopmentSurveySection() {
   ];
 
   return (
-    <section className="w-[90%] sm:w-[85%] lg:w-[80%] mx-auto py-10 sm:py-16 lg:py-20 text-gray-text px-4 sm:px-0">
+    <section className="w-[90%] sm:w-[85%] lg:w-[90%] mx-auto py-10 sm:py-16 lg:py-20 text-gray-text px-4 sm:px-0">
       <h1 className="font-bold text-base sm:text-[1.125rem] lg:text-[1.25rem] leading-[18px] sm:leading-7 lg:leading-9 uppercase">
         COMMERCIAL DEVELOPMENT SURVEY
       </h1>
-      <p className="w-full lg:w-[65%] xl:w-[50%] font-medium text-[0.75rem] sm:text-[1rem] lg:text-[1.125rem] leading-[180%] sm:leading-8 lg:leading-9 mt-4 sm:mt-5 lg:mt-6">
+      <p className="w-full lg:w-[90%] xl:w-[50%] font-medium text-[0.75rem] sm:text-[1rem] lg:text-[1.125rem] leading-[180%] sm:leading-8 lg:leading-9 mt-4 sm:mt-5 lg:mt-6">
         Detailed topographical and structural surveys for a new office complex
         in Dublin, supporting the design and planning team with reliable spatial
         data.

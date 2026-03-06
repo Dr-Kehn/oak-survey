@@ -33,7 +33,7 @@ function Trusted() {
   return (
     <>
       <section className="relative bg-[linear-gradient(rgba(31,31,31,0.8),rgba(31,31,31,0.8)),url('/handShake.jpg')] w-full bg-cover bg-no-repeat bg-center">
-        <div className="w-[90%] sm:w-[85%] lg:w-[80%] mx-auto flex flex-col min-h-[200px] sm:min-h-[280px] lg:min-h-[367px] justify-center py-10 sm:py-0 px-4 sm:px-0">
+        <div className="w-[90%] sm:w-[85%] lg:w-[90%] mx-auto flex flex-col min-h-[200px] sm:min-h-[280px] lg:min-h-[367px] justify-center py-10 sm:py-0 px-4 sm:px-0">
           <h1 className="text-yellow-header font-bold text-[1.225rem] sm:text-[1.75rem] lg:text-[2.25rem] uppercase leading-tight sm:leading-8 lg:leading-9 lg:text-left text-center">
             <span className="pb-2 sm:pb-3 lg:pb-4 inline-block">
               TRUSTED CLIENTS
@@ -44,7 +44,7 @@ function Trusted() {
 
       {/* Trusted Clients Icons */}
       <section className="py-10 sm:py-16 lg:py-20 bg-white">
-        <div className="w-[90%] sm:w-[85%] lg:w-[80%] mx-auto px-4 sm:px-0">
+        <div className="w-[90%] sm:w-[85%] lg:w-[90%] mx-auto px-4 sm:px-0">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8 lg:gap-x-10 lg:gap-y-20">
             {trustedClients.map((client, index) => (
               <aside
