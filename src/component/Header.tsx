@@ -265,7 +265,17 @@ function Header() {
                 <li className="border-b border-b-neutral">
                   <Link
                     className="block px-[5%] py-5 hover:bg-gray-50 transition-colors"
-                    to="Contact"
+                    to="gallery"
+                    onClick={closeMenu}
+                  >
+                    Gallery
+                  </Link>
+                </li>
+
+                <li className="border-b border-b-neutral">
+                  <Link
+                    className="block px-[5%] py-5 hover:bg-gray-50 transition-colors"
+                    to="contact"
                     onClick={closeMenu}
                   >
                     Contact us
