@@ -47,7 +47,7 @@ function Gallery() {
   const displayGallery = card.map((card) => (
     <div
       key={card.id}
-      className="w-full galleryCardShadow rounded-2xl sm:rounded-3xl p-4 sm:p-5 md:p-6"
+      className="w-full galleryCardShadow rounded-2xl sm:rounded-3xl p-4 sm:p-5 md:p-6 hover:scale-105 transition-transform duration-300"
     >
       <h1 className="font-bold text-lg sm:text-xl md:text-2xl leading-6 sm:leading-7 md:leading-8 tracking-normal text-gallery-black">
         {card.title}

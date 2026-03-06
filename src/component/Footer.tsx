@@ -48,7 +48,7 @@ function Footer() {
   return (
     <footer className=" min-h-[730px] mx-auto bg-brand-950 flex items-center">
       <section className="mx-auto lg:w-[90%] w-[80%] md:w-full md:px-10 lg:px-0 flex md:flex-row flex-col justify-between font-medium py-14 md:py-0">
-        <aside className="lg:w-[400px] md:w-[350px] w-full">
+        <aside className="md:w-[40%] w-full">
           {/* Form */}
           <h1 className="flex items-center gap-2 font-bold text-[1.51rem] mb-2.5 text-white-25">
             <img src="/oak_logo.svg" alt="Oak Logo" /> Oak Surveys
@@ -103,15 +103,15 @@ function Footer() {
         </aside>
 
         <div className="flex justify-between md:w-[50%] w-full mt-32 md:mt-0">
-          <aside>
+          <aside className="mr-4">
             {/* Links */}
-            <h1 className="font-bold text-[1.11125rem] text-white-25 mt-12">
+            <h1 className="font-bold text-[0.875rem] sm:text-[1rem] md:text-lg lg:text-[1.11125rem] text-white-25 mt-12">
               LINKS
               <ul className="flex flex-col gap-4 mt-8">
                 <li>
                   <Link
                     to="about"
-                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray hover:underline cursor-pointer"
+                    className="text-[0.625rem] sm:text-[0.75rem] md:text-base lg:text-lg/27.67px font-normal text-white-gray hover:underline cursor-pointer"
                     onClick={handleScrollOnClick}
                   >
                     About Us
@@ -119,7 +119,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray hover:underline cursor-pointer"
+                    className="text-[0.625rem] sm:text-[0.75rem] md:text-base lg:text-lg/27.67px font-normal text-white-gray hover:underline cursor-pointer"
                     to="trustedPartners"
                     onClick={handleScrollOnClick}
                   >
@@ -128,16 +128,27 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray hover:underline cursor-pointer"
+                    className="text-[0.625rem] sm:text-[0.75rem] md:text-base lg:text-lg/27.67px font-normal text-white-gray hover:underline cursor-pointer"
                     to="services"
                     onClick={handleScrollOnClick}
                   >
                     Our Services
                   </Link>
                 </li>
+
                 <li>
                   <Link
-                    className="md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px font-normal  text-white-gray hover:underline cursor-pointer"
+                    className="text-[0.625rem] sm:text-[0.75rem] md:text-base lg:text-lg/27.67px font-normal text-white-gray hover:underline cursor-pointer"
+                    to="gallery"
+                    onClick={handleScrollOnClick}
+                  >
+                    Gallery
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    className="text-[0.625rem] sm:text-[0.75rem] md:text-base lg:text-lg/27.67px font-normal text-white-gray hover:underline cursor-pointer"
                     to="contact"
                     onClick={handleScrollOnClick}
                   >
@@ -150,12 +161,12 @@ function Footer() {
 
           <aside>
             {/* Contact section */}
-            <h1 className="font-bold text-[1.11125rem] mb-2.5 text-white-25 mt-12 ">
+            <h1 className="font-bold text-[0.875rem] sm:text-[1rem] md:text-lg lg:text-[1.11125rem] mb-2.5 text-white-25 mt-12">
               CONTACT
               <ul className="flex flex-col gap-4 mt-8 text-white-gray">
                 <li>
                   <a
-                    className="flex items-center gap-4 md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px "
+                    className="flex items-center gap-4 md:text-[0.875rem] lg:text-base text-[0.625rem]/27.67px"
                     href="tel:+3530874950977"
                     rel="noopener noreferrer"
                   >
@@ -166,7 +177,7 @@ function Footer() {
 
                 <li>
                   <a
-                    className="flex items-center gap-4 md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px"
+                    className="flex items-center gap-4 text-[0.625rem] sm:text-[0.75rem] md:text-base lg:text-lg/27.67px"
                     href="mailto:info@oaksurveys.ie"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -177,13 +188,13 @@ function Footer() {
 
                 <li>
                   <a
-                    className="flex items-center gap-4 md:text-[1.125rem]/27.67px text-[0.75rem]/27.67px"
+                    className="flex items-center gap-4 text-[0.625rem] sm:text-[0.75rem] md:text-base lg:text-lg/27.67px"
                     href="https://maps.google.com/?q=Pollerton+Road,+Carlow+Town,+Carlow,+Ireland"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    <img src="/mail.svg" alt="mail icon" /> Pollerton Road,
-                    Carlow Town, Carlow , Ireland
+                    <img src="/locationIcon.png" alt="location icon" />{" "}
+                    Pollerton Road, Carlow Town, <br /> Carlow , Ireland
                   </a>
                 </li>
               </ul>
