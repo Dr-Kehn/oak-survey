@@ -28,6 +28,10 @@ function Trusted() {
       icon: "/Oakwood client Group.png",
       name: "Oakwood Group",
     },
+    {
+      icon: "/peopleCreatedBlue.jpg",
+      name: "Khen",
+    },
   ];
 
   return (
