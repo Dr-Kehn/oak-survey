@@ -1,5 +1,5 @@
 function Trusted() {
-  const trustedClients = [
+  const trustedClients: { icon: string; name: string; cardClass?: string }[] = [
     {
       icon: "/shannon.svg",
       name: "Shannon",
@@ -28,6 +28,16 @@ function Trusted() {
       icon: "/Oakwood client Group.png",
       name: "Oakwood Group",
     },
+    {
+      icon: "/AF Constrcution logo.png",
+      name: "AF Construction",
+      // Logo artwork is white-on-transparent, so it needs a dark tile to be legible
+      cardClass: "bg-[#1f1f1f]",
+    },
+    {
+      icon: "/dmc construction.jpg.jpeg",
+      name: "dmc Construction",
+    },
   ];
 
   return (
@@ -49,7 +59,9 @@ function Trusted() {
             {trustedClients.map((client, index) => (
               <aside
                 key={index}
-                className="flex shadow-md hover:shadow-xl rounded-xl sm:rounded-2xl lg:rounded-[36.47px] p-6 sm:p-8 md:p-10 lg:p-12 hover:scale-105 transition-all duration-300 items-center justify-center bg-white min-h-[100px] sm:min-h-[130px] md:min-h-[150px] lg:min-h-[180px]"
+                className={`flex shadow-md hover:shadow-xl rounded-xl sm:rounded-2xl lg:rounded-[36.47px] p-6 sm:p-8 md:p-10 lg:p-12 hover:scale-105 transition-all duration-300 items-center justify-center min-h-[100px] sm:min-h-[130px] md:min-h-[150px] lg:min-h-[180px] ${
+                  client.cardClass ?? "bg-white"
+                }`}
               >
                 <img
                   src={client.icon}
