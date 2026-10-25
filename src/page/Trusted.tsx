@@ -38,6 +38,10 @@ function Trusted() {
       icon: "/dmc construction.jpg.jpeg",
       name: "dmc Construction",
     },
+    {
+      icon: "/Mitchell-macadam_logo.png",
+      name: "Mitchell Macadam",
+    },
   ];
 
   return (
